@@ -2,8 +2,53 @@
 @import "libs";
 @import "fonts";
 
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.header-menu{
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    
+}
+
+.header-menu-nav{
+    position: relative;
+    top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    a {
+        color: gray;
+        text-decoration: none;
+    }
+    .header-menu-elem{
+        margin-left: 2rem;
+        transition: all .2s;
+    }
+    .header-menu-elem:hover {
+        color:black;
+    }
+}
 
 
-
+@media screen and (max-width: 960px) {
+    .header-menu {
+        flex-direction: column;
+    }
+    .header-menu-nav {
+        flex-direction: column;
+        .header-menu-elem {
+            font-size: 2rem;
+        }
+    }
+}
 
 @import "media";
