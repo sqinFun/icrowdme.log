@@ -2,6 +2,7 @@ $(function(){
 
     $('.main-section-slider').slick({
         infinite: true,
+        autoplay: true,
         speed: 500,
         fade: true,
         cssEase: 'linear',

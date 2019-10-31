@@ -10,4 +10,26 @@ h2 {
 html, body {
     font-size: 16px;
     color: $gray;
+    font-family: 'Open Sans';
+}
+
+.btn {
+    width: auto;
+    display: block;
+    padding: 1rem 2rem;
+    background-color: $green;
+    border-radius: .5rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    :hover {
+        cursor: pointer;
+    }
+    &.btn-ellips {
+        border-radius: 4rem;
+    }
+    &.btn-blue {
+        background-color: #26a6d1;
+    }
+    
 }
