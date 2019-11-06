@@ -18,7 +18,7 @@ $(function(){
         asNavFor: $(".project-slider-nav"),
         draggable: false,
       })
-
+      
       $('.project-slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,

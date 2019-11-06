@@ -16,20 +16,47 @@ html, body {
 .btn {
     width: auto;
     display: block;
+    position: relative;
     padding: 1rem 2rem;
-    background-color: $green;
     border-radius: .5rem;
+    border: none;
     color: white;
     text-decoration: none;
     text-align: center;
-    :hover {
-        cursor: pointer;
-    }
+    background-blend-mode: multiply;
+    cursor: pointer;
+    transition: box-shadow .2s;
+    
     &.btn-ellips {
         border-radius: 4rem;
     }
     &.btn-blue {
-        background-color: #26a6d1;
+        background: #26a6d1;
     }
-    
+    &.btn-green {
+        background: $green;
+    }
+    &.btn-white {
+        border: 1px solid #000;
+        background: #fff;
+        color: $gray;
+    }
+    &:hover {
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+    }
+    // &:hover::before {
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     border-radius: .5rem;
+    //     position: absolute;
+    //     content: "";
+    //     background-color: rgba(0,0,0, .1);
+    //     transition: all 2s;
+    // }
+}
+
+.color-white {
+    color: #fff !important;
 }
